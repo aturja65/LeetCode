@@ -13,9 +13,6 @@ class Solution:
                 top=stack.pop(-1)
                 if not self.checkBracket(top,value):
                     return False
-        if stack ==[]:
-            return True
-        else:
-            return False
+        return stack==[]
     def checkBracket(self,left,right):
         return self.left_list.index(left)==self.right_list.index(right)
